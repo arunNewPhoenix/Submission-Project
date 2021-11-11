@@ -7,6 +7,10 @@ The Project is made entirely on html css JS and Django
 Please follow the steps to run in localhost:
 
 1> The following command will install the packages according to the configuration file requirements.txt.
+
+
+
+
  pip install -r requirements.txt
  
 2> after done with installation of the packages
