@@ -22,3 +22,7 @@ Landing Page:
 ![Landing Page](https://user-images.githubusercontent.com/62498648/141296438-2ce32d10-819c-4208-ad46-c3a6d10ecda6.PNG)
 
 
+After Entering Your Color and Number of objects Select the Boxes Which you Want.
+
+
+![next Page](https://user-images.githubusercontent.com/62498648/141297003-fbbad585-99ab-4522-883c-2c6d24c10095.PNG)
