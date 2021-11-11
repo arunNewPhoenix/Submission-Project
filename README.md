@@ -17,4 +17,8 @@ cd into the root Directory of the Project(not the main app) that is Planogram in
 Wola! you ran the Project in your localhost Port:8000
 
 Some screenshots of the Project:
+Landing Page:
+
+![Landing Page](https://user-images.githubusercontent.com/62498648/141296438-2ce32d10-819c-4208-ad46-c3a6d10ecda6.PNG)
+
 
