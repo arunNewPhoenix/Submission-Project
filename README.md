@@ -2,7 +2,7 @@
 
 Aim of the Project: To make a Planogram for the the virtual commercial fridge
 
-How to Run the Project in the local eniviroment
+How to Run the Project in the local enviroment
 The Project is made entirely on html css JS and Django
 Please follow the steps to run in localhost:
 
