@@ -1,0 +1,107 @@
+<html>
+	<head>
+	<script type="text/javascript" src="static/js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="static/js/underscore-min.js"></script>
+	<script type="text/javascript" src="static/js/backbone.js"></script>
+	<link rel="stylesheet" type="text/css" href="static/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="static/css/prima.css">
+	</head>
+	<title>
+	Planogram
+	</title>
+	<body>
+		<div class="text-center">
+			<label id='title'>Planogram</label>
+		</div>
+		<form class='form-inline selectionForm'>
+			<div class="form-group required">
+				<label for="name">Color:</label>
+				<input type="text" class="form-control" id='name' placeholder="Pick a color..." required="required"/>
+			</div>
+			<div class="form-group required">
+				<label for="objs">Number Of objs:</label>
+				<input type="number" id='objs' class="form-control" placeholder="3" required="required"/>
+			</div>
+			<div class="text-center">
+				<button type="button" class="btn btn-primary btn-lg submitBtn" id="submitSelection">Start Selecting</button>
+			</div>
+			<div class="text-center">
+				<font color="Red"><label class="error"></label></font>
+			</div>
+
+		</form>
+		<div class="screen-ui">
+			
+			<table class="table" id="table-screen">
+				<thead id="screen-head">
+					<tr>
+						<script type="text/template" id='table-screen-header'>
+			   				<% _.each(_.range(0,columns+1),function(item){ %>
+			   					<% if(item==0) {%>
+			            			<th></th>
+			            		<% } else {%>
+			            			<th><%= item %></th>
+			            		<% } %>
+			    			<% }) %>
+			    		</script>
+		    		</tr>
+		    	</thead>
+		    	<tbody id="screen-body">
+		    		<script type="text/template" id='table-screen-body'>
+		    			<% _.each(rows,function(row){ %>
+		    				<tr id='table-screen-row'>
+		    					<td><%=row%></td>
+		    					<% _.each(_.range(1,columns+1),function(column){ %>
+		    						<% var id=(_.indexOf(rows,row)*columns)+column; var reservedobjs=JSON.parse(localStorage.getItem('Reservedobjs')); if(reservedobjs!=null && _.indexOf(reservedobjs,String(id))!=-1) {%>
+			            				<td><img src="static/img/notAvailable.jpg" class="reserved-seat" id="<%=id%>"/></td>
+			            			<% }else {%>
+			            				<td><img src="static/img/items.jpg" class="empty-obj" id="<%=id%>"/></td>		       
+			            			<% }}) %>
+	    					</tr>
+	    				<% }) %>
+					</script>	
+		    	</tbody>
+			</table>
+
+			<div class="text-center">
+				<button type="button" class="btn btn-primary btn-lg submitBtn" id="confirmSelection">Confirm Selection</button>
+				<div class="screen-map">
+				<label for="empty-obj-map">Selected obj</label>
+				<img src="static/img/selected.jpg" class="booked-obj-map" id="booked-obj-map">
+				<br/>
+				<label for=""> Currently Unavailable obj</label>
+				<img src="static/img/notAvailable.jpg" class="reserved-obj-map" id="reserved-obj-map">
+				<br/>
+				<label for="">Empty obj</label>
+				<img src="static/img/items.jpg" class="empty-obj-map" id="empty-obj-map">
+			</div>	
+			</div>
+					
+		</div>
+		<div class="table-responsive">
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>Color</th>
+						<th>Number of objs</th>
+						<th>objs</th>
+					</tr>
+				</thead>
+				<tbody id="items-sold-info">
+					<script type="text/template" id='table-items-info'>
+						<% _.each(items,function(item){%>
+							<tr>
+								<td><%-item.names%></td>
+								<td><%-item.numbers%></td>
+								<td><%-item.objs%></td>
+								
+							</tr>
+										
+							<%})%>
+					</script>
+				</tbody>
+			</table>
+		</div>
+	</body>
+	<script type="text/javascript" src="static/js/prima.js"></script>
+</html>
