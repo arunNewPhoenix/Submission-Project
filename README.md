@@ -32,7 +32,7 @@ After Entering Your Color and Number of objects Select the Boxes Which you Want.
 ![next Page](https://user-images.githubusercontent.com/62498648/141297003-fbbad585-99ab-4522-883c-2c6d24c10095.PNG)
 
 
-Note: The boxes with Red cross shows that they are Unavailable Now
+Note: The boxes with red cross shows that they are unavailable now...!
 
 ![Denotion](https://user-images.githubusercontent.com/62498648/141297851-c226a711-a0f7-4792-8b80-0b9cea6a3bb3.PNG)
 
@@ -40,7 +40,7 @@ Also we get a tabular form of the location of the boxes in the Matrix.
 
 You can Also see my other Project which are deployed in Heroku and are fully Functional 
 
-About me : I most of the time handle the backend that is the database the views.py and use Django as framework for populating the frontend with the data fetched from the database this is my first time I am handling a frontend Project because I wanted to learn these too.
+About me : I most of the time handle the backend that is the database the views.py and use Django as framework for populating the frontend with the data fetched from the database using jinja format of the django this is my first time I am handling a frontend Project because I wanted to learn these too.(I believe i can learn from your organization and my personal effort)
 
 My one of the best Project:
 handled the database models and schema's
