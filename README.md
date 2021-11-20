@@ -18,7 +18,7 @@ cd into the root Directory of the Project(not the main app) that is Planogram in
 
 3>Run the Following command in the terminal as: py manage.py runserver
 
-Wola! you ran the Project in your localhost Port:8000
+Vola! you ran the Project in your localhost Port:8000
 
 Some screenshots of the Project:
 Landing Page:
