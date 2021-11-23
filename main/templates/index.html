@@ -30,13 +30,15 @@
 			</div>
 
 		</form>
+		
+
 		<div class="screen-ui">
 			
 			<table class="table" id="table-screen">
 				<thead id="screen-head">
 					<tr>
 						<script type="text/template" id='table-screen-header'>
-			   				<% _.each(_.range(0,columns+1),function(item){ %>
+			   				<% _.each(_.range(0,columns+1),function(item){ %>  
 			   					<% if(item==0) {%>
 			            			<th></th>
 			            		<% } else {%>
@@ -53,7 +55,7 @@
 		    					<td><%=row%></td>
 		    					<% _.each(_.range(1,columns+1),function(column){ %>
 		    						<% var id=(_.indexOf(rows,row)*columns)+column; var reservedobjs=JSON.parse(localStorage.getItem('Reservedobjs')); if(reservedobjs!=null && _.indexOf(reservedobjs,String(id))!=-1) {%>
-			            				<td><img src="static/img/notAvailable.jpg" class="reserved-seat" id="<%=id%>"/></td>
+			            				<td><img src="static/img/notAvailable.jpg" class="reserved-objs" id="<%=id%>"/></td>
 			            			<% }else {%>
 			            				<td><img src="static/img/items.jpg" class="empty-obj" id="<%=id%>"/></td>		       
 			            			<% }}) %>

@@ -35,14 +35,14 @@
 	margin-left: 50%;
 	margin-top:-50px;
 }
-.reserved-seat{
+.reserved-objs{
 	margin-left:4px;
-	/*content: '';*/
-    /*background: url('../img/reserved-seat.png');*/
+
+   
 }
 .empty-seat{
 	cursor: pointer;
-	/*content: url('../img/empty-seat.png')*/
+	
 }
 .booked-seat{
 	cursor: pointer;
