@@ -40,7 +40,8 @@ Also we get a tabular form of the location of the boxes in the Matrix.
 
 You can Also see my other Project which are deployed in Heroku and are fully Functional 
 
-About me : I most of the time handle the backend that is the database the views.py and use Django as framework for populating the frontend with the data fetched from the database using jinja format of the django this is my first time I am handling a frontend Project because I wanted to learn these too.(I believe I can learn from your organization and my personal effort)
+About me :During my ongoing college years mostly I used Django as framework for populating the frontend with the data fetched from the database using jinja format of the django
+wrote models for the database as a DBA .This is my first time I am handling a frontend Project because I wanted to learn these too.(I believe I can learn from your organization and my personal effort)
 
 My one of the best Project:
 handled the database models and schema's
@@ -48,7 +49,7 @@ https://github.com/arunNewPhoenix/Lemonade_pbl
 Working Link: https://lemonadearunkumar.herokuapp.com/
 
 Other Projects
-:![image](https://user-images.githubusercontent.com/62498648/141304885-732e3bf2-7118-4368-9a52-b4f6a1b0e337.png)
+
 https://github.com/arunNewPhoenix/CardGame
 
 Thank you,
