@@ -40,11 +40,11 @@
 
    
 }
-.empty-seat{
+.empty-objs{
 	cursor: pointer;
 	
 }
-.booked-seat{
+.booked-objs{
 	cursor: pointer;
 	content: url('../img/selected.jpg');
 }

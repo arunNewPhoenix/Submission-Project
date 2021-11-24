@@ -37,6 +37,9 @@
 			<table class="table" id="table-screen">
 				<thead id="screen-head">
 					<tr>
+						<!-- Iterating over each of the item using for each ranging from 0 to columns -->
+						<!-- This Display's the Numeric Denotion onto the Columns -->
+
 						<script type="text/template" id='table-screen-header'>
 			   				<% _.each(_.range(0,columns+1),function(item){ %>  
 			   					<% if(item==0) {%>
@@ -48,11 +51,17 @@
 			    		</script>
 		    		</tr>
 		    	</thead>
+
+				<!-- Iterating over the 2D array to Display the Rows and Columns -->
+
 		    	<tbody id="screen-body">
 		    		<script type="text/template" id='table-screen-body'>
 		    			<% _.each(rows,function(row){ %>
 		    				<tr id='table-screen-row'>
 		    					<td><%=row%></td>
+
+								<!-- Looping through the range of columns and checking the condition met for Currently Unavailable object aka Reserved for next Allotment -->
+
 		    					<% _.each(_.range(1,columns+1),function(column){ %>
 		    						<% var id=(_.indexOf(rows,row)*columns)+column; var reservedobjs=JSON.parse(localStorage.getItem('Reservedobjs')); if(reservedobjs!=null && _.indexOf(reservedobjs,String(id))!=-1) {%>
 			            				<td><img src="static/img/notAvailable.jpg" class="reserved-objs" id="<%=id%>"/></td>
@@ -64,6 +73,8 @@
 					</script>	
 		    	</tbody>
 			</table>
+
+			<!-- Pictorial Representation of the screen aka what denotes what.. -->
 
 			<div class="text-center">
 				<button type="button" class="btn btn-primary btn-lg submitBtn" id="confirmSelection">Confirm Selection</button>
@@ -80,6 +91,9 @@
 			</div>
 					
 		</div>
+
+          <!-- Display the Result in Tabular Form using Bootstrap Table -->
+
 		<div class="table-responsive">
 			<table class="table table-bordered">
 				<thead>
@@ -89,6 +103,9 @@
 						<th>objs</th>
 					</tr>
 				</thead>
+                    
+				<!-- Iterating over each item to display there name number and objs -->
+                    
 				<tbody id="items-sold-info">
 					<script type="text/template" id='table-items-info'>
 						<% _.each(items,function(item){%>

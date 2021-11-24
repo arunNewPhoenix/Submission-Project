@@ -3,7 +3,7 @@ var Rows=["A","B","C","D","E","F","G","H","I","J"];
 var Columns=12;
 var Totalobjs=Rows.length*Columns;
 
-function convertIntToobjNumbers(objs){
+function convertIntToobjNumbers(objs){  /*   */
 	var bookedobjs="";
 	_.each(objs,function(obj){
 		var row=Rows[parseInt(parseInt(obj)/12)];
@@ -11,22 +11,22 @@ function convertIntToobjNumbers(objs){
 		if(column==0){
 			column=12;
 		}
-		if(_.indexOf(objs,obj)==objs.length-1){
+		if(_.indexOf(objs,obj)==objs.length-1){  //if it has reached the end of the table just add them dont put comma
 			bookedobjs=bookedobjs+row+column;
 		}
-		else{
+		else{                                        //else do this
 			bookedobjs=bookedobjs+row+column+",";
 		}
 	});
-	return bookedobjs;
+	return bookedobjs;  //return the number
 }
 
 var InitialView = Backbone.View.extend({
 	events:{
-		"click #submitSelection": "submitForm"
+		"click #submitSelection": "submitForm"         //eventListener
 	},
 	submitForm : function(){
-		var reservedobjs=JSON.parse(localStorage.getItem('Reservedobjs'));
+		var reservedobjs=JSON.parse(localStorage.getItem('Reservedobjs')); 
 		var availableobjs=Totalobjs;
 		var selectedNumberOfobjs=$('#objs').val();
 		if(reservedobjs!=null)
