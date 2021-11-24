@@ -43,7 +43,7 @@ You can Also see my other Project which are deployed in Heroku and are fully Fun
 About me :During my ongoing college years mostly I used Django as framework for populating the frontend with the data fetched from the database using jinja format of the django
 wrote models for the database as a DBA .This is my first time I am handling a frontend Project because I wanted to learn these too.(I believe I can learn from your organization and my personal effort)
 
-My one of the best Project:
+My other one of the best Project: A Web-application :: Lemonade-an app for CS-nerds...
 handled the database models and schema's
 https://github.com/arunNewPhoenix/Lemonade_pbl
 Working Link: https://lemonadearunkumar.herokuapp.com/
