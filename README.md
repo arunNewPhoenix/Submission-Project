@@ -2,6 +2,8 @@
 
 Aim of the Project: To make a Planogram for the the virtual commercial fridge
 
+[finalPresentation.pptx](https://github.com/arunNewPhoenix/Submission-Project/files/7608986/finalPresentation.pptx)
+
 How to Run the Project in the local enviroment
 The Project is made entirely on html css JS and Django
 Please follow the steps to run in localhost: Terminal
